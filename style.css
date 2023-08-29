@@ -1,0 +1,26 @@
+table{
+    border: 2px solid black;
+    border-collapse: collapse;
+
+}
+th,td{
+    border: 1px solid black;
+    padding: 5px;
+}
+.list{
+    list-style-type: none;
+    padding-left: 0;
+}
+section{
+    margin: 0;
+}
+a{
+    text-decoration: none;
+}
+footer{ 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    
+}

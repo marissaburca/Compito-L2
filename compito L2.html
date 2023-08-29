@@ -4,11 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="Sviluppo di una pagina web - Blog Epicode" />
     <title>BLOG</title>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
     <div class="container">
       <header>
-        <img src="logo.svg" alt="Logo epicode" />
+        <img src="logo.svg" alt="Logo epicode" id="logo" width="250px"/>
         <nav>
           <!-- menù interattivo -->
           <menu>
@@ -31,10 +32,19 @@
           <p>La prima cosa da fare è suddividere in blocchi logici la pagina, identificando le parti comuni da applicare a tutte le pagine</p>
           <ul>
             <p>Le varie aree saranno quindi suddivise in:</p>
-            <li>Contenuti di intestazione del tag &lt;headers &gt</li>
-            <li>Contenuti centrali variabili del tag <main» (corpo principale)</li>
-            <li>Contenuti di fine pagina comuni, da inserire nel tag ‹footer></li>
+            <li>Contenuti di intestazione del tag &lt;headers&gt;</li>
+            <li>Contenuti centrali variabili del tag &lt;main&gt; (corpo principale)</li>
+            <li>Contenuti di fine pagina comuni, da inserire nel tag &lt;footer&gt;</li>
           </ul>
+          <p>Formattazione codice</p>
+          <ol>
+            <p>Il testo dell'articolo dovrà essere formattato per identificare tutte le parti da selezionare con i CSS. Perciò i passi
+                saranno</p>
+                <li>Progettare il markup assegnando ad ogni specifico testo il tag appropriato</li>
+                <li>Scrivere I'HTML dai tag esterni a quelli interni e dall'alto verso il basso</li>
+                <li>Applicare gll still CSS</li>
+          </ol>
+          <p>L'applicazione di stili CSS è cresciuta negli anni fino a raggiungere la diffusione pressoché totale.</p>
           <table>
             <caption>
               Diffusione dei CSS
@@ -81,12 +91,42 @@
             <a href="#">-LINK ESTERNO-</a> dedicato allo scopo. Una volta ottimizzato il tutto, avremo
             raggiunto il nostro obiettivo ed essere stati dei veri developers come loro:
             <div>
-                <a href="#">-INSERIRE VIDEO YOUTUBE-</a>
-            </div>
+              <iframe width="736" height="414" src="https://www.youtube.com/embed/WR1ydijTx5E" title="How I Learned to Code in 4 Months &amp; Got a Job! (No CS Degree, No Bootcamp)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>"
+                 </div>
+            
           </p>
+          <p>Vuoi rimanere aggiornato su altre novità del blog? Iscriviti alla nostra newsletter:</p>
+            <form>
+                <label for="mail">Inserisci l'email</label>
+                <input type="email" id="mail"> 
+                <button type="submit">Iscriviti!</button>
+
+            </form>
         </section>
+        <aside>
+            <p>Articoli correlati</p>
+            <ul class="list">
+               <li>Validare il codice HTML</li>
+               <li>Categoria: develop</li>
+               <li>Data: 18-9-2020</div>  
+            </ul>
+            <ul class="list">
+                <li>Correggere la sintassi</li>
+                <li>Categoria: develop</li>
+                <li>Data: 16-9-2020</ul>
+            </ul>
+            <ul class="list">
+                <li>Meno Kb nella pagina</li>
+                <li>Categoria: ottimizzazione</li>
+                <li>Data: 30-9-2020</li>
+            </ul>
+        </aside>
       </main>
     </div>
-    <footer></footer>
+    <footer>
+        <p>Blog Epicode @2023</p>
+        <p>Testata online di Mario Rossi, registrata con prot. n.213&sol;2018 - Via Luigi Einaudi 2 - Milano. P-IVA 00112233.
+            <a href="mailto:Info@repicode.school">Info@repicode.school</a></p>
+    </footer>
   </body>
 </html>
